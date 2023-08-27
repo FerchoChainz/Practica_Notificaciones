@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/my_primary"
+      android:alpha="0.7"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_above="@id/card_view"
+      android:padding="28dp">
+
+    <ImageView
+        android:layout_width="187dp"
+        android:layout_height="111dp"
+        android:src="@drawable/medical_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Inicio de Sesion."
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+  </LinearLayout>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      app:cardCornerRadius="28dp"
+      android:layout_marginBottom="-20dp"
+      android:id="@+id/card_view"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Bienvenido"
+          android:textColor="@color/my_secondary"
+          android:textSize="32sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Por favor llena los campos con tu informacion."
+          android:alpha="0.7"/>
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="30dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Email "
+          android:alpha="0.7"
+          android:textStyle="bold"/>
+
+      <EditText
+          android:id="@+id/txtCorreo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:drawableEnd="@drawable/done_icon"
+          android:inputType="textEmailAddress" />
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="20dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Password"
+          android:alpha="0.7"
+          android:textStyle="bold"/>
+
+      <EditText
+          android:id="@+id/txtPasswd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:drawableEnd="@drawable/password_icon"
+          android:inputType="textPassword" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantener sesion."
+            android:layout_centerVertical="true"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olvide Mi Contraseña"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+      </RelativeLayout>
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="10dp"/>
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnLogin"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:onClick="logIn"
+          android:text="Login"
+          android:textColor="@color/black"
+          app:cornerRadius="32dp" />
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="10dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Or Login with"
+          android:layout_gravity="center"
+          android:alpha="0.7"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/fb"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/git"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/tt"/>
+
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+  </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica_Notificaciones</string>
+    <string name="titulo3">Informacion sobre IMC</string>
+    <string name="detalle">Para adultos de 20 años o mas, el IMC se interpreta usando categorias de
+    peso estandar. Estas categorias son iguales para hombres y mujeres. Estas categorias son iguales
+    para hombres y mujeres de todos los tipos de cuerpo y edades.</string>
+    <string name="detalle2">Las personas obesas y con sobrepeso tienen mas probabilidades de sufrir
+    infartos y accidentes cerebrovasculares. La grasa abdominal en particular esta relacionada con otros
+    factores de reisgo cardiovascular como la diabetes, la hipertension, el aumento de la masa cardiaca
+    y el colesterol alto. Todos estos factores de riesgo provoca que el colesterol se acumule en las paredes de las arterias
+    y se creen placas.</string>
+</resources>
